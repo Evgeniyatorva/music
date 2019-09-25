@@ -1,0 +1,115 @@
+@import '_variable.scss';
+
+@media (min-width:0px) and (max-width:1200px) {
+
+
+.b-a {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 4px;
+  width: 31px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.menu {
+  transition: all .25s;
+  position: fixed;
+  top: 10px;
+  right: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    transition: all 0s;
+    position: fixed;
+    left: -9000px;
+  }
+}
+
+.bar {
+  margin-top: 18px;
+  @extend .b-a;
+    position: fixed;
+    right: 12px;
+    top: 24px;
+  &:before {
+    @extend .b-a;
+    top: -8px;
+  }
+  &:after {
+    @extend .b-a;
+    top: 8px;
+  }
+}
+.b-a-expanded {
+  transition: all .25s;
+  top: -0px;
+}
+
+.menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  line-height: 60px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  right: 0;
+  background-color: rgba(22, 22, 22, 0.85);
+
+  ul {
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    padding-left: 0px;
+    flex-direction: column;
+
+    li {
+      list-style: none;
+      &:nth-child(4) {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    transition: all .15s;
+    text-decoration: none;
+    font-size: 2em;
+    height: 100%;
+    padding: 5px;
+    color: #fff;
+    max-width: 300px;
+
+    &:hover {
+      transition: all .15s;
+      color: $yellow;
+    }
+  }
+
+  .bar {
+    background-color: transparent;
+    transition: all .25s;
+
+    &:before {
+      @extend .b-a-expanded;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      @extend .b-a-expanded;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+}
