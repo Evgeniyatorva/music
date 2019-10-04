@@ -43,8 +43,18 @@
       @content;
   }
 }
+@mixin _1280 {
+  @media (max-width: 1280px){
+      @content;
+  }
+}
 @mixin _1200 {
   @media (max-width: 1200px){
+      @content;
+  }
+}
+@mixin _1100 {
+  @media (max-width: 1100px){
       @content;
   }
 }

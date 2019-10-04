@@ -1,18 +1,17 @@
 @font-face {
 	font-family: 'Bernard';
-	src: url('../fonts/font.otf');
+	src: url('../fonts/Bernard.otf');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
   font-family: 'downcomeregular';
-  src: url('../fonts/Downcome/downcome-webfont.eot');
-  src: url('../fonts/Downcome/downcome-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Downcome/downcome-webfont.woff2') format('woff2'),
-       url('../fonts/Downcome/downcome-webfont.woff') format('woff'),
-       url('../fonts/Downcome/downcome-webfont.ttf') format('truetype'),
-       url('../fonts/Downcome/downcome-webfont.svg#downcomeregular') format('svg');
+  src: url('../fonts/Downcome/Downcome.eot');
+  src: url('../fonts/Downcome/Downcome.woff2') format('woff2'),
+       url('../fonts/Downcome/Downcome.woff') format('woff'),
+       url('../fonts/Downcome/Downcome.ttf') format('truetype'),
+       url('../fonts/Downcome/Downcome.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 

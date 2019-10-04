@@ -34,15 +34,15 @@ $(".menu").click(function() {
 
 
 // popup items service
-const items = ['voice', 'drums', 'guitar'];
+var items = ['voice', 'drums', 'guitar'];
 $(".service-items-link .item").click(function(e) {
   e.preventDefault();
-  let contextLink = $(this);  
+  var contextLink = $(this);  
 
   $(".service-items-content .service-display").each(function(index, elem) {
-    let contextContent = $(elem);
+    var contextContent = $(elem);
 
-    items.map(item => {
+    items.map(function(item) {
       if (contextLink.attr('data-name') === item && contextContent.hasClass(item) ) {
         contextContent.show("slow");
       }
@@ -52,13 +52,11 @@ $(".service-items-link .item").click(function(e) {
 $(".popup-close").click(function(e) {
   e.preventDefault();
   $(".service-items-content .service-display").each(function(index, elem) {
-    let contextContent = $(elem);
-    items.map(item => {
+    var contextContent = $(elem);
+    items.map(function(item) {
       if (contextContent.hasClass(item) ) {
         contextContent.hide("slow");
       }
     })
   })
-
-
 })
