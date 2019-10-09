@@ -129,29 +129,29 @@ body {
 .social {
   color: $white;
   text-decoration: none; 
-  margin-right: 15px;
+  margin-right: 10px;
   &:nth-child(1) {
-    margin-right: 18px;
+    margin-right: 14px;
   }
 }
 .inst {
   background-image: url(../img/inst.svg);
-  background-size: 25px;
-  width: 25px;
-  height: 25px;
+  background-size: 19px;
+  width: 19px;
+  height: 19px;
 }
 .vk {
   background-image: url(../img/vk.svg);
-  background-size: 35px;
-  width: 35px;
-  height: 35px;
+  background-size: 29px;
+  width: 29px;
+  height: 29px;
   margin-top: -5px;
 }
 .fb {
   background-image: url(../img/fb.svg);
-  background-size: 25px;
-  width: 25px;
-  height: 25px;
+  background-size: 19px;
+  width: 19px;
+  height: 19px;
 }
 
 .header {
@@ -174,6 +174,10 @@ body {
     top: 15px;
     left: 15px;
 
+    img {
+      width: 100px;
+    }
+
     @include _1921 {
       display: none;
     }
@@ -185,22 +189,19 @@ body {
     }
     @include _420 {
       left: 0px;
-      img {
-        width: 100px;
-        height: 65px;
-      }
     }
   }
 
   &-contact {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 21px;
+    font-size: 18px;
+    line-height: 23px;
     font-weight: 400;
     color: $white;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 12px;
 
     @include _1200 {
       justify-content: flex-end;
@@ -233,6 +234,8 @@ body {
       .phone {
         color: $white;
         text-decoration: none;
+        font-size: 18px;
+        line-height: 21px;
         &:nth-child(1){
           margin-right: 50px;
         }
@@ -266,16 +269,16 @@ body {
           padding-left: 0;
           display: flex;
           justify-content: space-between;
-          padding-top: 15px;
+          padding-top: 7px;
           li {
             list-style: none;      
             &:nth-child(4) {
-              margin-top: -55px;
+              margin-top: -45px;
             }
             a {
               font-family: 'Roboto Condensed', sans-serif;
-              font-size: 18px;
-              line-height: 34px;
+              font-size: 16px;
+              line-height: 25px;
               color: $white;
       
               text-transform: uppercase;
@@ -283,6 +286,10 @@ body {
       
               &:hover{
                 color: $yellow;
+              }
+
+              .logo {
+                width: 115px;
               }
             }
           }
@@ -303,20 +310,23 @@ body {
   display: block;
   overflow: hidden;
   width: 100%;
-  height: 55px;
   max-width: 170px;
   text-transform: uppercase;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   background-color: transparent;
   color: $white;
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 23px;
+  font-size: 22px;
+  line-height: 50px;
+  font-weight: 100;
   cursor: pointer;
   outline: none;
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     color: $white;
-    border: 2px solid $white;
+    border: 1px solid $white;
   }
 
   &:hover:before {
@@ -364,9 +374,9 @@ body {
 .btn-center {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 51px;
   @include _1300 {
-    margin-top: 30px;
+    margin-top: 21px;
   }
   @include _920 {
     margin-top: 51px;
@@ -402,29 +412,33 @@ body {
 
     .main-title {
       font-family: 'Bernard';
-      font-size: 100px;
+      font-size: 94px;
       line-height: 110px;
       color: $white;
       font-weight: 400;
       text-transform: uppercase;
       margin: 0;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       position: relative;
       @include _480 {
         margin-bottom: 0px;
+        font-size: 80px;
+        line-height: 92px;
       }
     }
     .main-subtitle {
       font-family: 'Roboto Condensed', sans-serif;
-      font-size: 30px;
-      line-height: 40px;
+      font-size: 28px;
+      line-height: 39px;
       color: $white;
       font-weight: 300;
       margin: 0;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
 
       @include _480 {
         margin-bottom: 20px;
+        font-size: 25px;
+        line-height: 31px;
       }
     }
   }
@@ -620,7 +634,7 @@ body {
       justify-content: flex-start;
       padding-left: 13px;
 
-      button {
+      a {
         margin-right: 30px;
       }
     }
@@ -668,6 +682,7 @@ body {
     @include _480 {
       margin-left: 0px;
       margin-right: 0px;
+      background-position-x: 16px;
     }
 
     &:hover {
@@ -681,6 +696,10 @@ body {
       height: 100%;
       background-color: rgba($color: #222, $alpha: 0.6);
       transition: all 0.7s ease-out;
+
+      @include _768 {
+        background-color: rgba($color: #222, $alpha: 0);
+      }
     }
 
     &:nth-child(1) {
@@ -696,6 +715,10 @@ body {
       background-repeat: no-repeat;
       background-position: -15px -75px;
       background-size: 100%;
+
+      @include _480 {
+        background-position-x: -3px;
+      }
       
       img {
         margin-top: -6px;
@@ -707,7 +730,9 @@ body {
       background-repeat: no-repeat;
       background-position: -15px -5px;
       background-size: 100%;
-      
+      @include _480 {
+        background-position-x: 3px;
+      }
     }
 
     img {
@@ -715,11 +740,7 @@ body {
       left: 50%;
       margin-right: -50%;
       transform: translate(-50%, -50%);
-      height: 90px;
-
-      @include _480 {
-        width: 87%;
-      }
+      height: 60px;
     }
   }
 }
@@ -774,16 +795,24 @@ body {
   width: 100%;
   position: relative;
   text-align: center;
-  margin-top: 124px;
-  margin-bottom: 60px;
+  margin-top: 5%;
+  margin-bottom: 35px;
+
+  @include _1620 {
+    margin-top: 6%;
+  }
+
+  @include _1200 {
+    margin-top: 69px;
+  }
 
   img {
-    @include _1380 {
-      width: 200px;
+    height: 55px;
+
+    @include _1280 {
+      height: 50px;
     }
-    @include _1100 {
-      width: 149px;
-    }
+
   }  
 
   h2 {
@@ -814,8 +843,9 @@ body {
 
     &-image {
       margin-top: -156px;
+      max-width: 570px;
 
-      @include _1560 {
+      @include _1620 {
         max-width: 500px;
         margin-top: -40px;
       }
@@ -825,7 +855,7 @@ body {
         margin-top: -100px;
       }
 
-      @include _1100 {
+      @include _1280 {
         max-width: 314px;
         margin-top: -23px;
         margin-left: -30px;
@@ -847,19 +877,19 @@ body {
         margin-left: 87px;
       }
 
-      @include _1100 {
+      @include _1280 {
         margin-left: 0;
       }
     }
 
     &-text {
       font-family: 'Roboto', sans-serif;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: 38px;
+      line-height: 46px;
       color: $white;
       margin-top: 40px;
       margin-left: 240px;
-      margin-bottom: 100px;
+      margin-bottom: 81px;
       width: 100%;
       padding-right: 5px;
 
@@ -878,8 +908,9 @@ body {
       }
       
       &-count {
+        margin-bottom: 23px;
 
-        @include _1100 {
+        @include _1280 {
           margin-top: 0;
           margin-bottom: 10px;
         }
@@ -903,12 +934,14 @@ body {
             content: '';
             position: absolute;
             background-image: url(../img/number-8.png);
-            width: 155px;
-            height: 155px;
-            top: -19px;
-            left: -69px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 143px;
+            height: 143px;
+            top: -18px;
+            left: -38px;
 
-            @include _1100 {
+            @include _1280 {
               width: 106px;
               height: 106px;
               background-size: 100%;
@@ -920,7 +953,7 @@ body {
               width: 79px;
               height: 79px;
               top: -6px;
-              left: 60px;
+              left: 50px;
             }
           }
         }
@@ -950,8 +983,8 @@ body {
 
   .prices-subtitle {
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 36px;
+    line-height: 45px;
     color: $yellow;
     text-transform: uppercase;
     width: 100%;
@@ -965,7 +998,7 @@ body {
       margin-top: -102px;
     }
 
-    @include _1200 {
+    @include _1280 {
       margin-top: -67px;
     }
 
@@ -985,21 +1018,21 @@ body {
   }
 
   &-image {
-    min-width: 662px;
-    max-width: 662px;
+    min-width: 595px;
+    max-width: 595px;
     height: auto;
     margin-left: -77px;
     margin-top: -100px;
 
     @include _1660 {
-      min-width: 550px;
-      max-width: 550px;
+      min-width: 515px;
+      max-width: 515px;
       margin-top: 0px;
       margin-left: -14px;
     }
     @include _1380 {
-      min-width: 440px;
-      max-width: 440px;
+      min-width: 384px;
+      max-width: 384px;
       margin-top: -70px;
     }
 
@@ -1028,23 +1061,24 @@ body {
 
     @include _768 {
       flex-direction: column;
-      margin-top: -44px;
     }
 
     .sale-item {
       width: 270px;
       text-align: center;
       font-family: "Roboto", sans-serif;
-      font-size: 36px;
+      font-size: 32px;
+      line-height: 35px;
       color: $white;
       font-weight: 100;
       position: relative;
-      margin-right: 100px;
+      margin-right: 45px;
       transform: rotate(-15deg);
       margin-top: 50px;
 
       @include _1660 {
-        font-size: 28px;
+        font-size: 25px;
+        line-height: 30px;
         margin-right: 30px;
       }
 
@@ -1055,12 +1089,11 @@ body {
       .sale-img {
         img {
           position: absolute;
-          width: 125px;
-          left: 73px;    
+          left: 68px;    
           @include _1660 {
-            left: 77px;
-            width: 100px;
-            top: 171px;
+            left: 85px;
+            height: 60px;
+            top: 161px;
           }    
         }        
       }
@@ -1070,7 +1103,8 @@ body {
         margin-left: -235px;
         transform: rotate(-4deg);
         @include _1660 { 
-          margin-top: -90px;
+          margin-top: -61px;
+          margin-left: -211px;
         }
 
         @include _768 {
@@ -1078,15 +1112,6 @@ body {
           margin-left: 0px;          
           margin-bottom: 129px;
         }
-
-        img {
-          left: 77px;
-
-          @include _1660 {
-            left: 77px;
-            width: 100px;
-          } 
-         } 
       }
 
       &:nth-child(2) {
@@ -1094,7 +1119,8 @@ body {
         margin-left: -50px;
         transform: rotate(-13deg);
         @include _1660 { 
-          margin-left: -60px;
+          margin-left: -95px;
+          margin-top: 282px;
         }
 
         @include _768 {
@@ -1104,16 +1130,8 @@ body {
 
         img {
          position: absolute;
-         width: 137px;
-         top: -93px;
-         left: 65px;
-
-          @include _1660 {
-            left: 37px;
-            width: 100px;
-            top: -85px;
-            left: 81px;
-          } 
+         top: -68px;
+         left: 80px;
         }        
 
         &:before {
@@ -1121,7 +1139,6 @@ body {
           top: -228px;
           @include _1660 {
             top: -178px;
-            left: -57px;
           }
         }
       }
@@ -1138,15 +1155,15 @@ body {
         background-image: url(../img/sale-img-triangle.png);
         background-repeat: no-repeat;
         background-size: 100%;
-        width: 487px;
-        height: 423px;
-        left: -105px;
+        width: 445px;
+        height: 389px;
+        left: -90px;
         top: 10px;
 
         @include _1660 {
-          width: 387px;
-          height: 336px;
-          left: -64px;
+          width: 367px;
+          height: 319px;
+          left: -52px;
           top: 10px;
         }
       }
@@ -1157,9 +1174,6 @@ body {
 .about-teacher {
   display: flex;
   justify-content: center;
-  @include _1400 {
-    margin-top: -30px;
-  }
 
   @include _1100 {
     flex-wrap: wrap;
@@ -1167,8 +1181,8 @@ body {
 
   .about-item {
     width: 371px; 
-    margin-left: 52px;
-    margin-right: 52px;
+    margin-left: 4%;
+    margin-right: 4%;
 
     @include _1400 {
       width: 250px;
@@ -1216,7 +1230,7 @@ body {
   justify-content: space-around;
 
   @include _1400 {
-    margin-top: 130px;
+    margin-top: 7%;
   }
 
   @include _1200 {
@@ -1248,9 +1262,10 @@ body {
     }
 
     @include _480 {
-      margin-left: 0px;
-      max-width: 315px;
-      min-width: 315px;
+      margin-left: 2%;
+      margin-right: 2%;
+      max-width: 305px;
+      min-width: 305px;
     }
 
     img {
@@ -1284,13 +1299,9 @@ body {
     }
 
     ul {
-      margin-top: 80px;
+      margin-top: 0;
       margin-left: 62px;
       max-width: 700px;
-
-      @include _1300 {
-        margin-top: 40px;
-      }
 
       @include _480 {
         margin-left: 35px;
@@ -1302,7 +1313,7 @@ body {
         font-size: 27px;
         line-height: 35px;
         color: $white;
-        margin-bottom: 50px;
+        margin-bottom: 29px;
         list-style: none;
         position: relative;
 
@@ -1312,7 +1323,7 @@ body {
         }
 
         @include _1280 {
-          margin-bottom: 23px;
+          margin-bottom: 18px;
         }
 
         &:before {
@@ -1340,11 +1351,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 172px;
-
-  @include _1440 {
-    margin-top: 103px;
-  }
+  margin-top: 6%;
 
   .video-item {
     margin-right: 1%;
@@ -1352,8 +1359,12 @@ body {
     margin-top: 1%;
     margin-bottom: 1%;
 
+    @include _1280 {
+      margin: 5px;
+    }
+
     img {
-      width: 356px;
+      width: 330px;
 
       @include _1440 {
         width: 265px;
@@ -1367,11 +1378,11 @@ body {
   padding-bottom: 20px;
 
   @include _1440 {
-    margin-top: -30px;
+    margin-top: 0px;
   }
 
-  @include _1440 {
-    margin-top: 0px;
+  @include _1280 {
+    margin-top: -20px;
   }
 
   &-text {
@@ -1443,11 +1454,11 @@ body {
     a {
       display: block;
       font-family: 'Roboto', sans-serif;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 22px;
+      line-height: 28px;
       color: $white;
       text-decoration: none;
-      margin-bottom: 14px;
+      margin-bottom: 11px;
       width: 100%;
       cursor: text;
 
@@ -1461,7 +1472,7 @@ body {
     margin-top: -98px;
     position: relative;
     z-index: -10;
-
+    max-width: 740px;
     @include _1100 {
       max-width: 540px;
       text-align: center;
@@ -1491,7 +1502,7 @@ body {
 
     .map-google {
       width: 100%;
-      height: 100%;
+      height: 95%;
     }
   }
 }
@@ -1499,7 +1510,8 @@ body {
 .free-learn {
   display: flex;
   justify-content: space-around;
-  margin-top: 120px;
+  margin-top: 7%;
+  margin-bottom: 20px;
 
   @include _1200 {
     flex-wrap: wrap;
@@ -1507,26 +1519,24 @@ body {
 
   &-image {
     width: 40%;
-    margin-top: 68px;
+    margin-top: 3%;
     padding-left: 3%;
 
-    @include _1200 {
-      margin-top: -51px;
-      width: 100%;
+    @include _1280 {
+      width: 30%;
       padding-left: 0px;
     }
 
+    @include _1200 {
+      display: none;
+    }
+
     img {
+      width: 450px;
       @include _1380 {
         width: 350px;
         margin-left: 3%;
         margin-top: 53px;
-      }
-
-      @include _1200 {
-        margin: 0 auto;
-        display: block;
-        margin-bottom: 20px;
       }
     }
   }
@@ -1535,10 +1545,13 @@ body {
     width: 60%;
     background-image: url(../img/triangle-background.png);
     background-repeat: no-repeat;
-    background-position: 359px 148px;
+    background-position: 359px 117px;
+
+    @include _1280 {
+      width: 70%;
+    }
 
     @include _1200 {
-      margin-bottom: 30px;
       width: 100%;
     }
   }  
@@ -1593,7 +1606,7 @@ body {
       margin-left: 0px;
     }
 
-    @include _768 {
+    @include _520 {
       width: 100%;
     }
   }

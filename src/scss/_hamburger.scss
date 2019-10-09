@@ -39,7 +39,7 @@
   @extend .b-a;
     position: fixed;
     right: 12px;
-    top: 24px;
+    top: 15px;
   &:before {
     @extend .b-a;
     top: -8px;
@@ -112,4 +112,10 @@
   }
 }
 
+}
+
+@media (min-width:0px) and (max-width:420px) {
+  .bar {
+    top: 20px;
+  }
 }
