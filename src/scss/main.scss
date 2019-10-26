@@ -1032,58 +1032,60 @@ body {
       
       &-count {
         margin-bottom: 23px;
+        position: relative;
+        padding-left: 5px;
 
         @include _1280 {
           margin-top: 0;
           margin-bottom: 10px;
         }
-        @include _480 { 
+        @include _520 { 
           font-size: 21px;
           word-wrap: break-word;
         }
 
         span {
           position: relative;
-          margin-right: 40px;
-          margin-top: -100px;
-          top: -22px;
-          left: -90px;
-          @include _1400 {
-            margin-top: 40px;
-            vertical-align: middle;
+          margin-right: 45px;
+          font-size: 75px;
+          font-weight: 400;
+
+          @include _1280 {
+            font-size: 60px;
+            margin-right: 35px;
           }
-  
+          @include _520 {
+            font-size: 36px;
+            margin-right: 10px;
+          }
+
           &:before {
             content: '';
+            background-image: url(../img/price-img-number.png);
+            width: 155px;
+            height: 155px;
+            display: block;
             position: absolute;
-            background-image: url(../img/number-8.png);
+            top: -27px;
+            left: -69px;
             background-size: 100%;
-            background-repeat: no-repeat;
-            width: 143px;
-            height: 143px;
-            top: -18px;
-            left: -38px;
 
             @include _1280 {
-              width: 106px;
-              height: 106px;
-              background-size: 100%;
-              top: -13px;
-              left: 11px;
+              width: 120px;
+              height: 120px;
+              top: -18px;
+              left: -55px;
             }
 
-            @include _480 {
-              width: 79px;
-              height: 79px;
-              top: -6px;
-              left: 50px;
+            @include _520 {
+              width: 70px;
+              height: 70px;
+              top: -11px;
+              left: -31px;
             }
           }
         }
 
-        .span-hidden {
-          display: none;
-        }
       }     
 
       &-value {
@@ -1096,7 +1098,7 @@ body {
           font-size: 50px;
           margin-left: 98px;
         }
-        @include _480 {
+        @include _520 {
           font-size: 36px;
           margin-left: 88px;
         }
